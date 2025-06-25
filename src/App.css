@@ -25,9 +25,14 @@ footer {
 }
 
 .intro-section {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .feature-section {
-    background-color: green;
+    /* background-color: green; */
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }

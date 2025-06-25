@@ -9,7 +9,7 @@ function App() {
 
       <main>
         <div className="intro-section">
-          <h2>Intro Section | Hero Section</h2>
+          <h2 className="section-heading">Intro Section | Hero Section</h2>
           <p>
             Introduction to the system. (Hero Section)
           </p>
@@ -18,7 +18,7 @@ function App() {
         <hr/>
 
         <div className="feature-section">
-          <div className="section-heading">Features</div>
+          <h2 className="section-heading">Features</h2>
 
           <div className="feature-grid">
             <div className="feature-item">Item 01</div>

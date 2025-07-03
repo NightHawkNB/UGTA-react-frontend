@@ -1,11 +1,12 @@
 import "./App.css";
+import { FeatureItem } from "./components/feature.jsx"
+import { Header } from "./components/header.jsx";
 
 function App() {
   return (
     <div className="main-container">
-      <header>
-        <h1>Student Management System</h1>
-      </header>
+      
+      <Header />
 
       <main>
         <div className="intro-section">
@@ -21,10 +22,10 @@ function App() {
           <h2 className="section-heading">Features</h2>
 
           <div className="feature-grid">
-            <div className="feature-item">Item 01</div>
-            <div className="feature-item">Item 02</div>
-            <div className="feature-item">Item 03</div>
-            <div className="feature-item">Item 04</div>
+            <FeatureItem name="feature 01" />
+            <FeatureItem name="feature 02" />
+            <FeatureItem name="feature 02" />
+            <FeatureItem name="feature 04" />
           </div>
         </div>
 

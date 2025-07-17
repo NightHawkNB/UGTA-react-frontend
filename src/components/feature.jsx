@@ -1,7 +1,9 @@
 
-function FeatureItem({ name }) {
+function FeatureItem({ title, index }) {
     return (
-        <div className="feature-item">{ name }</div>
+        <div className="feature-item">
+            { title } { index }
+        </div>
     )
 }
 

@@ -3,6 +3,7 @@ import { FeatureItem } from "./components/feature.jsx"
 import { Header } from "./components/header.jsx";
 
 function App() {
+  
   return (
     <div className="main-container">
       
@@ -22,10 +23,10 @@ function App() {
           <h2 className="section-heading">Features</h2>
 
           <div className="feature-grid">
-            <FeatureItem name="feature 01" />
-            <FeatureItem name="feature 02" />
-            <FeatureItem name="feature 02" />
-            <FeatureItem name="feature 04" />
+            <FeatureItem title="feature 1" index={1} />
+            <FeatureItem title="feature 2" index={1} />
+            <FeatureItem title="feature 3" index={1} />
+            <FeatureItem title="feature 4" index={1} />
           </div>
         </div>
 

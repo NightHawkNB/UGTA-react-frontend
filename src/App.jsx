@@ -24,9 +24,9 @@ function App() {
 
           <div className="feature-grid">
             <FeatureItem title="feature 1" index={1} />
-            <FeatureItem title="feature 2" index={1} />
-            <FeatureItem title="feature 3" index={1} />
-            <FeatureItem title="feature 4" index={1} />
+            <FeatureItem title="feature 2" index={2} />
+            <FeatureItem title="feature 3" index={3} />
+            <FeatureItem title="feature 4" index={4} />
           </div>
         </div>
 

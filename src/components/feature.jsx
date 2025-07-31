@@ -1,8 +1,8 @@
 
-function FeatureItem({ title, index }) {
+function FeatureItem(props) {
     return (
         <div className="feature-item">
-            { title } { index }
+            { props.title } { props.index }
         </div>
     )
 }

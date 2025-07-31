@@ -2,6 +2,8 @@ import "./App.css";
 import { FeatureItem } from "./components/feature.jsx"
 import { Header } from "./components/header.jsx";
 
+import DetailsForm from "./components/form.jsx";
+
 import { useState } from "react";
 
 function App() {
@@ -33,7 +35,14 @@ function App() {
 
         <hr/>
 
-        <div className="conatiner" style={{ display: "flex", gap: "10px", justifyContent: "start", alignItems: "center" }}>
+        <div className="conatiner"
+          style={{ 
+            display: "flex",
+            gap: "10px",
+            justifyContent: "start",
+            alignItems: "center" 
+          }}
+        >
           <button onClick={incrementCounter}>+</button>
           Counter : {count}
           <button onClick={decrementCounter}>-</button>
@@ -51,6 +60,9 @@ function App() {
             <FeatureItem title="feature 4" index={4} main={main_title} />
           </div>
         </div>
+
+        <h1>Student Details Form</h1>
+        <DetailsForm />
 
       </main>
 

@@ -8,4 +8,4 @@ function FeatureItem(props) {
     )
 }
 
-export { FeatureItem };
+export default FeatureItem;

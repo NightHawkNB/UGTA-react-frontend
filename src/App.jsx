@@ -1,8 +1,8 @@
 import "./App.css";
-import { FeatureItem } from "./components/feature.jsx"
-import { Header } from "./components/header.jsx";
-
+import FeatureItem from "./components/feature.jsx"
+import Header from "./components/header.jsx";
 import DetailsForm from "./components/form.jsx";
+import Footer from "./components/footer.jsx";
 
 import { useState } from "react";
 
@@ -66,9 +66,7 @@ function App() {
 
       </main>
 
-      <footer>
-        <p>© 2025 Student Management System. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

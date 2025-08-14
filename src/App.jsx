@@ -13,6 +13,8 @@ import Navbar from "./components/navbar.jsx";
 
 //* Routing package imports
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/AboutPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/manage" element={<ManagePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
         <Footer />

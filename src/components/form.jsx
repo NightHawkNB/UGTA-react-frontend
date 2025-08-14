@@ -13,7 +13,7 @@ function DetailsForm({ students, setStudents }) {
 
         //* Creating a new student object with the provided name and email.
         const newStudent = {
-            id: students.length + 1,
+            id: students[students.length - 1]?.id + 1 || 1,
             name: name,
             email: email
         };

@@ -285,10 +285,6 @@ form input[type="submit"]:hover {
   margin-bottom: 1rem;
 }
 
-.student-list-section {
-  /* Optional styling if needed later */
-}
-
 .no-users {
   padding: 1rem;
   color: #888;

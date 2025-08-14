@@ -6,11 +6,8 @@
     height: 100%;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 main {
@@ -22,14 +19,6 @@ footer {
     background-color: #f1f1f1;
     padding: 1rem;
     text-align: center;
-}
-
-.intro-section {
-    /* background-color: blue; */
-}
-
-.feature-section {
-    /* background-color: green; */
 }
 
 .feature-grid {

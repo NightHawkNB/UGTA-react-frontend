@@ -1,23 +1,34 @@
 import { useState } from "react";
 
-function DetailsForm() {
+function DetailsForm({ students, setStudents }) {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
+    function handleSubmit(event) {
+
+        //* This line prevents the default form submission behavior.
+        //* Without this, the page will refresh when the form is submitted.
+        event.preventDefault();
+
+        //* Creating a new student object with the provided name and email.
+        const newStudent = {
+            id: students.length + 1,
+            name: name,
+            email: email
+        };
+
+        //* Updating the array of students by adding the new student object.
+        setStudents([...students, newStudent]);
+
+        //* Clearing the form fields after submitting the student data.
+        setName("");
+        setEmail("");
+    }
+
     return (
         <div className="form-container">
-            <form className="details-form"
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "10px",
-                    maxWidth: "400px",
-                    margin: "0 auto",
-                    border: "1px solid #ccc",
-                    padding: "20px",
-                }}
-            >
+            <form className="details-form" onSubmit={e => handleSubmit(e)} >
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text" 
@@ -25,6 +36,7 @@ function DetailsForm() {
                     name="name" 
                     required 
                     onChange={(e) => setName(e.target.value)}
+                    value={name}
                 />
 
                 <label htmlFor="email">Email:</label>
@@ -34,15 +46,11 @@ function DetailsForm() {
                     name="email"
                     required
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                 />
 
                 <button type="submit" style={{marginTop: "20px"}}>Submit</button>
             </form>
-
-            <div>
-                Name : {name ? name : "Not-set"} <br />
-                Email : {email ? email : "Not-set"}
-            </div>
         </div>
     )
 }
